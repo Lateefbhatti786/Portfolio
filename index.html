@@ -1,156 +1,170 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Abdul Lateef Bhatti - Portfolio</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
     <nav>
-        <div class="logo">ALB</div>
+      <div class="logo">Abdul Lateef</div>
+      <div class="nav-right">
         <ul class="nav-links">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#about">About</a></li>
-            <li><a href="#skills">Skills</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#contact">Contact</a></li>
+          <li><a href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills-projects">Skills & Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
-        <div class="theme-switch-wrapper">
-            <label class="theme-switch" for="checkbox">
-                <input type="checkbox" id="checkbox" />
-                <div class="slider round"></div>
-            </label>
-        </div>
+      </div>
     </nav>
 
     <header id="hero">
-        <div class="hero-content">
-            <h1>Abdul Lateef Bhatti</h1>
-            <p class="tagline">Engineer in Progress. Innovator at Heart. Leader by Discipline.</p>
-            <p class="bio">
-                I’m a B.Tech Computer Science (AI) student at Shoolini University — passionate about building intelligent systems, leading with purpose, and solving real-world problems through technology.
-                As an NCC Under Officer and Startup Coordinator, I believe in discipline, innovation, and service — values that shape both my code and my character.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">🚀 Explore My Work</a>
-                <a href="#contact" class="btn btn-secondary">📩 Get in Touch</a>
-            </div>
+      <canvas id="particle-canvas"></canvas>
+      <div class="hero-content">
+        <div class="hero-image">
+          <img src="images/lateef.jpeg" alt="Abdul Lateef Bhatti" />
         </div>
+        <div class="hero-text">
+          <p class="tagline">
+            <span class="highlight">Engineer</span> in Progress.<br />
+            <span class="highlight">INNOVATOR</span> at Heart.<br />
+            <span class="highlight">LEADER</span> by Discipline.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">Explore My Work</a>
+            <a href="#contact" class="btn btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </div>
     </header>
 
     <main>
-        <section id="about">
-            <h2>🙋‍♂️ About Me</h2>
-            <div class="about-content">
-                <img src="images/lateef.jpeg" alt="Abdul Lateef Bhatti" class="profile-pic">
-                <p>
-                    I’m Abdul Lateef Bhatti, a Computer Science student specializing in Artificial Intelligence. My journey combines the spirit of leadership from NCC with the curiosity of an engineer. I love building purposeful projects that connect innovation with impact. Whether it’s AI-based systems, data visualization, or web development — I approach every project with precision, creativity, and discipline.
-                </p>
-            </div>
-        </section>
+      <section id="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+         
+          <p>
+            I’m Abdul Lateef Bhatti, a Computer Science student specializing in
+            Artificial Intelligence. My journey combines the spirit of
+            leadership from NCC with the curiosity of an engineer. I love
+            building purposeful projects that connect innovation with impact.
+            Whether it’s AI-based systems, data visualization, or web
+            development — I approach every project with precision, creativity,
+            and discipline.
+          </p>
+        </div>
+      </section>
 
-        <section id="skills">
-            <h2>💻 Skills</h2>
-            <div class="skills-container">
-                <div class="skill-category">
-                    <h3>Technical Skills</h3>
-                    <ul>
-                        <li>Python</li>
-                        <li>HTML/CSS</li>
-                        <li>JavaScript</li>
-                        <li>Flask</li>
-                        <li>NumPy</li>
-                        <li>Pandas</li>
-                        <li>Data Science</li>
-                        <li>AI & ML</li>
-                        <li>Generative AI</li>
-                        <li>Web Development</li>
-                    </ul>
-                </div>
-                <div class="skill-category">
-                    <h3>Soft Skills</h3>
-                    <ul>
-                        <li>Leadership</li>
-                        <li>Public Speaking</li>
-                        <li>Team Management</li>
-                        <li>Design Thinking</li>
-                        <li>Strategic Planning</li>
-                        <li>Problem Solving</li>
-                        <li>Discipline</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
-
-        <section id="projects">
-            <h2>🚀 Projects</h2>
-            <div class="projects-container">
-                <div class="project-card">
-                    <h3>WealthWise – Smart Money Management Platform</h3>
-                    <p>A web-based solution for managing investments and finances smartly. Focused on data visualization, planning, and personalized insights.</p>
-                    <p><strong>Tools:</strong> Flask, Pandas, Chart.js</p>
-                    <div class="project-links">
-                        <a href="#" class="btn-link">Live Demo</a>
-                        <a href="#" class="btn-link">Source Code</a>
+        <section id="skills-projects">
+            <h2>💻 Skills & Projects</h2>
+            <div class="skills-projects-container">
+                <div class="skills-column">
+                    <div class="skills-container">
+                        <div class="skill-category">
+                            <h3>Technical Skills</h3>
+                            <ul>
+                                <li>Python</li>
+                                <li>HTML/CSS</li>
+                                <li>JavaScript</li>
+                                <li>Flask</li>
+                                <li>NumPy</li>
+                                <li>Pandas</li>
+                                <li>Data Science</li>
+                                <li>AI & ML</li>
+                                <li>Generative AI</li>
+                                <li>Web Development</li>
+                            </ul>
+                        </div>
+                        <div class="skill-category">
+                            <h3>Soft Skills</h3>
+                            <ul>
+                                <li>Leadership</li>
+                                <li>Public Speaking</li>
+                                <li>Team Management</li>
+                                <li>Design Thinking</li>
+                                <li>Strategic Planning</li>
+                                <li>Problem Solving</li>
+                                <li>Discipline</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
-                <div class="project-card">
-                    <h3>Travaksha – Smart Tourism Solution</h3>
-                    <p>A travel-tech concept that offers secure storage solutions for tourists and a smart space-leasing system.</p>
-                    <p><strong>Tools:</strong> HTML/CSS, JavaScript, Firebase</p>
-                    <div class="project-links">
-                        <a href="#" class="btn-link">View Concept</a>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <h3>Weekly Performance Tracker App</h3>
-                    <p>A productivity app for tracking weekly academic and personal goals, featuring analytics and progress insights.</p>
-                    <p><strong>Tools:</strong> Python, Tkinter</p>
-                    <div class="project-links">
-                        <a href="#" class="btn-link">Source Code</a>
+                <div class="projects-column">
+                    <div class="projects-container">
+                        <div class="project-card">
+                            <h3>WealthWise – Smart Money Management Platform</h3>
+                            <p>A web-based solution for managing investments and finances smartly.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Travaksha – Smart Tourism Solution</h3>
+                            <p>A travel-tech concept that offers secure storage solutions for tourists.</p>
+                        </div>
+                        <div class="project-card">
+                            <h3>Weekly Performance Tracker App</h3>
+                            <p>A productivity app for tracking weekly academic and personal goals.</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section id="experience">
-            <h2>🧭 Experience & Leadership</h2>
-            <div class="experience-container">
-                <div class="experience-item">
-                    <h3>Under Officer, NCC</h3>
-                    <p><em>1 HP Battalion, Solan</em></p>
-                    <p>Gained leadership, teamwork, and discipline through active NCC involvement.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Startup Coordinator, Institution’s Innovation Council</h3>
-                    <p>Coordinating and mentoring student innovation projects and fostering a culture of entrepreneurship.</p>
-                </div>
-                <div class="experience-item">
-                    <h3>Intern, ElevateLabs</h3>
-                    <p>Worked on AI and web-based project tasks, applying problem-solving and design thinking.</p>
-                </div>
-            </div>
-        </section>
+      <section id="experience">
+        <h2>🧭 Experience & Leadership</h2>
+        <div class="experience-container">
+          <div class="experience-item">
+            <h3>Under Officer, NCC</h3>
+            <p><em>1 HP Battalion, Solan</em></p>
+            <p>
+              Gained leadership, teamwork, and discipline through active NCC
+              involvement.
+            </p>
+          </div>
+          <div class="experience-item">
+            <h3>Startup Coordinator, Institution’s Innovation Council</h3>
+            <p>
+              Coordinating and mentoring student innovation projects and
+              fostering a culture of entrepreneurship.
+            </p>
+          </div>
+          <div class="experience-item">
+            <h3>Intern, ElevateLabs</h3>
+            <p>
+              Worked on AI and web-based project tasks, applying problem-solving
+              and design thinking.
+            </p>
+          </div>
+        </div>
+      </section>
 
-        <section id="contact">
-            <h2>📬 Contact</h2>
-            <p class="contact-note">“Have an idea or project in mind? Let’s connect and build something meaningful.”</p>
-            <div class="contact-links">
-                <a href="mailto:youremail@example.com">youremail@example.com</a>
-                <a href="#">LinkedIn</a>
-                <a href="#">GitHub</a>
-            </div>
-        </section>
+      <section id="contact">
+        <h2>📬 Contact</h2>
+        <p class="contact-note">
+          “Have an idea or project in mind? Let’s connect and build something
+          meaningful.”
+        </p>
+        <div class="contact-links">
+          <a href="mailto:youremail@example.com">youremail@example.com</a>
+          <a href="#">LinkedIn</a>
+          <a href="#">GitHub</a>
+        </div>
+      </section>
     </main>
 
     <footer>
-        <p>“Discipline. Dedication. Development.”</p>
+      <p>“Discipline. Dedication. Development.”</p>
     </footer>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
